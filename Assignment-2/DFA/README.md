@@ -8,7 +8,14 @@ A Python-based implementation of a **Deterministic Finite Automaton (DFA)** desi
 -  Educational insights into automata theory  
 
 ---
+## Objective
+Design and implement a **Deterministic Finite Automaton (DFA)** that recognizes simplified English words according to the following rules:
+- The word must start with a lowercase English letter (`a`–`z`).
+- The rest of the word may contain only lowercase English letters (`a`–`z`).
+- Any uppercase letters, digits, spaces, or special characters make the word invalid.
 
+  ---
+  
 ## Goals
 
 - Demonstrate DFA principles in a practical Python application  
