@@ -28,18 +28,10 @@ This project explores morphological analysis using **prefix** and **suffix tries
 
 ---
 
-## How to Run
-
-Ensure `brown_nouns.txt` is in the same directory as the script.
-
-```bash
-python stem_trie.py
-```
-This will generate a text file as stemming_output.txt which contains stem+suffix pairs and a comparison summary.
-
----
-
 ## Output Format
+
+On execution a text file of stemming_output.txt is generated which contains stem+suffix pairs and a comparison summary.
+
 Prefix Trie Stemming:
 investigation = in+vestigation
 primary = p+rimary
