@@ -1,0 +1,7 @@
+fox = fox+N+SG | foxes+N+PL
+try = try+N+SG | tries+N+PL
+bag = bag+N+SG | bags+N+PL
+church = church+N+SG | churches+N+PL
+buzz = buzz+N+SG | buzzes+N+PL
+sky = sky+N+SG | skies+N+PL
+123 = 123+N+SG | Invalid Word
