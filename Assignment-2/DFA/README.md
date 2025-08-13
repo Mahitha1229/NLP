@@ -52,3 +52,6 @@ which is, one or more lowercase English letters.
 | `dead`        | `any`           | `dead`     |
 
 ---
+
+## Execution
+Execute on Google Colab
