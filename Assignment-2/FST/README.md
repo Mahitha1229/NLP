@@ -47,4 +47,5 @@ election = election+N+SG | elections+N+PL
 thanks = thanks+N+SG | Invalid Word 
 irregularities = irregularities+N+SG | Invalid Word
 
-
+## Execution
+Execute on Goggle Colab
