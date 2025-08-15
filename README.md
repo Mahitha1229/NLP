@@ -41,6 +41,7 @@ The objective is to :
 ## **Assignment 3:**
 
 **1. Trie-Based Stemming Analysis**
+
 This project explores morphological analysis using **prefix** and **suffix tries** to identify stems and suffixes in English nouns. The goal is to evaluate which trie structure provides more effective stemming based on branching heuristics.
 
 The interpretation is :
@@ -49,6 +50,7 @@ The interpretation is :
 - Based on suffix length comparison, Suffix Trie provides better stemming performance for this dataset.
 
 **2. Telugu Token Frequency Analysis**
+
 This project analyzes **Telugu text tokens** and visualizes the **Top 100 most frequent tokens** in a **horizontal bar chart**.  
 It uses **Matplotlib** for visualization, **Counter** from Python's `collections` for frequency calculation, and a **custom Telugu font (.ttf)** to ensure proper rendering of Telugu characters.
 
