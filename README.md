@@ -15,10 +15,7 @@ The features are :
 - Handles dates, URLs, emails, numbers, and Telugu script
 - Saves tokenized output to a .txt file
 - Computes corpus statistics: sentence/word counts, TTR, averages
-- Interactive tokenization for user input
-
 ---
-
 ### **Assignment 2 :**
 
 **1. DFA**
@@ -27,13 +24,6 @@ The objective is to design and implement a Deterministic Finite Automaton (DFA) 
 - The word must start with a lowercase English letter (a–z).
 - The rest of the word may contain only lowercase English letters (a–z).
 - Any uppercase letters, digits, spaces, or special characters make the word invalid.
-
-This validator accepts non-empty strings composed exclusively of lowercase English letters (a–z). It includes:
-
-- Interactive command-line validation
-- Batch testing for datasets
-- DFA visualization using networkx and matplotlib
-- Educational insights into automata theory
 
 **2. FST**
 This project simulates a Finite State Transducer (FST) that processes nouns from the Brown corpus and generates their morphological features in both singular and plural forms.
@@ -58,6 +48,9 @@ The interpretation is :
 - Suffix Trie captures common English suffixes (e.g., -ion, -y, -s) more effectively.
 - Based on suffix length comparison, Suffix Trie provides better stemming performance for this dataset.
 
+**2. Telugu Token Frequency Analysis**
+This project analyzes **Telugu text tokens** and visualizes the **Top 100 most frequent tokens** in a **horizontal bar chart**.  
+It uses **Matplotlib** for visualization, **Counter** from Python's `collections` for frequency calculation, and a **custom Telugu font (.ttf)** to ensure proper rendering of Telugu characters.
 
 
 
