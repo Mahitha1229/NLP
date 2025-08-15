@@ -17,6 +17,8 @@ The features are :
 - Computes corpus statistics: sentence/word counts, TTR, averages
 - Interactive tokenization for user input
 
+---
+
 ### **Assignment 2 - DFA**
 The objective is to design and implement a Deterministic Finite Automaton (DFA) that recognizes simplified English words according to the following rules:
 
