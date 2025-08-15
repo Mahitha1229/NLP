@@ -19,6 +19,7 @@ The features are :
 ### **Assignment 2 :**
 
 **1. DFA**
+
 The objective is to design and implement a Deterministic Finite Automaton (DFA) that recognizes simplified English words according to the following rules:
 
 - The word must start with a lowercase English letter (a–z).
@@ -26,9 +27,11 @@ The objective is to design and implement a Deterministic Finite Automaton (DFA) 
 - Any uppercase letters, digits, spaces, or special characters make the word invalid.
 
 **2. FST**
+
 This project simulates a Finite State Transducer (FST) that processes nouns from the Brown corpus and generates their morphological features in both singular and plural forms.
 
 The objective is to : 
+
 - Read nouns from `brown_nouns.txt`
 - Apply pluralization rules using FST logic
 - Output morphological tags in the format:  
@@ -45,6 +48,7 @@ The objective is to :
 This project explores morphological analysis using **prefix** and **suffix tries** to identify stems and suffixes in English nouns. The goal is to evaluate which trie structure provides more effective stemming based on branching heuristics.
 
 The interpretation is :
+
 - Prefix Trie often splits early, resulting in short stems that may lack linguistic relevance.
 - Suffix Trie captures common English suffixes (e.g., -ion, -y, -s) more effectively.
 - Based on suffix length comparison, Suffix Trie provides better stemming performance for this dataset.
