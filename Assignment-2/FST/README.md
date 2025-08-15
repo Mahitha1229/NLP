@@ -15,7 +15,7 @@ This project simulates a **Finite State Transducer (FST)** that processes nouns 
 
 ---
 
-## 🔤 Morphological Tags
+## Morphological Tags
 
 | Tag | Meaning     |
 |-----|-------------|
