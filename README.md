@@ -6,7 +6,16 @@ This repository contains all my **Natural Language Processing (NLP)** lab assign
 ## Assignments Overview
 
 ### **Assignment 1 – Tokenizer**
+This project provides a Unicode-aware tokenization pipeline for Telugu text using the AI4Bharat IndicCorpV2 dataset.
 
+The features are : 
+
+- Sentence segmentation using Telugu and Latin punctuation
+- Word tokenization with Unicode-aware regex
+- Handles dates, URLs, emails, numbers, and Telugu script
+- Saves tokenized output to a .txt file
+- Computes corpus statistics: sentence/word counts, TTR, averages
+- Interactive tokenization for user input
 
 ### **Assignment 2 - DFA**
 The objective is to design and implement a Deterministic Finite Automaton (DFA) that recognizes simplified English words according to the following rules:
