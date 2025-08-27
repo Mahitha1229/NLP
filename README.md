@@ -58,5 +58,21 @@ The interpretation is :
 This project analyzes **Telugu text tokens** and visualizes the **Top 100 most frequent tokens** in a **horizontal bar chart**.  
 It uses **Matplotlib** for visualization, **Counter** from Python's `collections` for frequency calculation, and a **custom Telugu font (.ttf)** to ensure proper rendering of Telugu characters.
 
+---
 
+## **Assignment 4:**
 
+**1. N-gram Model**
+
+This project builds unigram, bigram, trigram, and quadrigram models from a tokenized Telugu corpus. It is designed for corpus analysis, sentence probability evaluation, and reproducible research in Indian language NLP.
+
+This script processes a tokenized Telugu corpus and generates frequency-based n-gram models (n = 1 to 4). Each model is saved as a `.txt` file with tab-separated n-gram counts for downstream use in smoothing, sentence generation, or statistical analysis.
+
+It works by:
+- *Loading Corpus* : Reads and tokenizes each line from `tokenized_telugu.txt`.
+- *Building Models* :
+- `Unigram`: Single-token frequencies
+- `Bigram`: Consecutive token pairs
+- `Trigram`: Three-token sequences
+- `Quadrigram`: Four-token sequences
+- Saving the output: Each model is saved as a `.txt` file
