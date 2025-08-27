@@ -76,3 +76,49 @@ It works by:
 - `Trigram`: Three-token sequences
 - `Quadrigram`: Four-token sequences
 - Saving the output: Each model is saved as a `.txt` file
+
+---
+
+**2. Smoothing Techniques**
+
+This repository implements a bigram-based language model for Telugu using a tokenized corpus. It applies three smoothing techniques :
+
+- Add-One
+- Add-K
+- Token-Type to estimate conditional probabilities for bigrams and outputs the results in a structured format.
+
+**Overview**
+
+The script reads a tokenized Telugu corpus, builds bigram frequency counts, and computes smoothed probabilities for each bigram using:
+
+- Add-One Smoothing
+- Add-K Smoothing (with k = 0.3)
+- Token-Type Smoothing (heuristic weights)
+- The results are saved to a tab-separated file for inspection or downstream evaluation.
+
+---
+
+**3. Telugu N-Gram Language Modeling with Smoothing Techniques**
+
+This project performs the following tasks: 
+
+1. **Synthetic Sentence Generation**  
+   Automatically generates 1000 Telugu news-style sentences using topic-specific vocabulary and realistic templates. No external input file is required.
+
+2. **Corpus Loading and Preprocessing**  
+   Loads a pre-tokenized Telugu corpus (`tokenized_telugu.txt`) and prepares evaluation sentences with `<s>` and `</s>` markers.
+
+3. **N-Gram Model Construction**  
+   Builds unigram, bigram, trigram, and quadrigram frequency models from the tokenized corpus.
+
+4. **Smoothing Techniques**  
+   Applies:
+   - Add-One Smoothing  
+   - Add-K Smoothing (k = 0.3)  
+   - Token-Type Smoothing (heuristic weight = 1.5)
+
+5. **Sentence Probability Evaluation**  
+   Computes log-probabilities for each of the 1000 synthetic sentences under each model and smoothing technique.
+
+6. **Output Saving**  
+   Saves results to a tab-separated file for inspection or downstream analysis.
