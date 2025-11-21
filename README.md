@@ -157,3 +157,26 @@ This repository contains four modular scripts for analyzing sentence similarity 
 - Estimates operation count for dense dot products.
 
 ---
+
+### **Assignment 9:**
+
+**BPE & WordPiece Tokenization (From Scratch)**
+
+This project implements **Byte Pair Encoding (BPE)** and **WordPiece** algorithms from scratch using a tokenized Telugu corpus. The script reads `tokenized_telugu.txt`, learns merge rules, and generates vocabulary files of size **32,000 tokens**.
+
+---
+
+## How It Works
+- Loads corpus and counts word frequencies
+- Initializes character-level vocabulary + `</w>` end-of-word marker
+- Repeatedly merges symbol pairs:
+  - **BPE**: merges most frequent adjacent pair
+  - **WordPiece**: merges pair with highest score  
+    `score = pair_freq / (freq(left) * freq(right))`
+- Stops after **32000 merges** or when **vocab size reaches 32000**
+
+---
+
+## Run
+```bash
+python code.py
