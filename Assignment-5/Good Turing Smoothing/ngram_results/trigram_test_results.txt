@@ -1,0 +1,67 @@
+================================================================================
+TRIGRAM MODEL - TEST SET RESULTS
+================================================================================
+
+Model Statistics:
+  Vocabulary size (V): 18
+  Unique n-grams seen (N): 36
+  N-grams appearing once (N1): 33
+  Unseen n-gram probability: 1.5815504946e-04
+
+--------------------------------------------------------------------------------
+SENTENCE-LEVEL PROBABILITIES
+--------------------------------------------------------------------------------
+
+Sentence 1: the dog is an animal
+--------------------------------------------------------------------------------
+Sentence Log Probability: -19.2956288301
+Sentence Probability: 4.1688366116e-09
+
+N-gram Breakdown:
+  <s> <s> the                              Probability: 6.6666666667e-01
+  <s> the dog                              Probability: 2.5000000000e-01
+  the dog is                               Probability: 1.5815504946e-04
+  dog is an                                Probability: 1.5815504946e-04
+  is an animal                             Probability: 1.0000000000e+00
+  an animal </s>                           Probability: 1.0000000000e+00
+
+================================================================================
+
+Sentence 2: cats sat on the mat
+--------------------------------------------------------------------------------
+Sentence Log Probability: -21.0873882993
+Sentence Probability: 6.9480610193e-10
+
+N-gram Breakdown:
+  <s> <s> cats                             Probability: 1.6666666667e-01
+  <s> cats sat                             Probability: 1.5815504946e-04
+  cats sat on                              Probability: 1.5815504946e-04
+  sat on the                               Probability: 1.0000000000e+00
+  on the mat                               Probability: 3.3333333333e-01
+  the mat </s>                             Probability: 5.0000000000e-01
+
+================================================================================
+
+Sentence 3: the cat and dog are friends
+--------------------------------------------------------------------------------
+Sentence Log Probability: -19.2956288301
+Sentence Probability: 4.1688366116e-09
+
+N-gram Breakdown:
+  <s> <s> the                              Probability: 6.6666666667e-01
+  <s> the cat                              Probability: 5.0000000000e-01
+  the cat and                              Probability: 5.0000000000e-01
+  cat and dog                              Probability: 1.5815504946e-04
+  and dog are                              Probability: 1.5815504946e-04
+  dog are friends                          Probability: 1.0000000000e+00
+  are friends </s>                         Probability: 1.0000000000e+00
+
+================================================================================
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Total sentences: 3
+Total words: 16
+Average log probability per sentence: -19.8928819865
+Perplexity: 41.6756

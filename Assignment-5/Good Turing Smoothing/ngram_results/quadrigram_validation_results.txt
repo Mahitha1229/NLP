@@ -1,0 +1,65 @@
+================================================================================
+QUADRIGRAM MODEL - VALIDATION SET RESULTS
+================================================================================
+
+Model Statistics:
+  Vocabulary size (V): 18
+  Unique n-grams seen (N): 37
+  N-grams appearing once (N1): 35
+  Unseen n-gram probability: 9.0142458566e-06
+
+--------------------------------------------------------------------------------
+SENTENCE-LEVEL PROBABILITIES
+--------------------------------------------------------------------------------
+
+Sentence 1: the cat sat on the log
+--------------------------------------------------------------------------------
+Sentence Log Probability: -2.4849066498
+Sentence Probability: 8.3333333333e-02
+
+N-gram Breakdown:
+  <s> <s> <s> the                          Probability: 6.6666666667e-01
+  <s> <s> the cat                          Probability: 5.0000000000e-01
+  <s> the cat sat                          Probability: 5.0000000000e-01
+  the cat sat on                           Probability: 1.0000000000e+00
+  cat sat on the                           Probability: 1.0000000000e+00
+  sat on the log                           Probability: 5.0000000000e-01
+  on the log </s>                          Probability: 1.0000000000e+00
+
+================================================================================
+
+Sentence 2: dogs are animals
+--------------------------------------------------------------------------------
+Sentence Log Probability: -34.8501130773
+Sentence Probability: 7.3246722554e-16
+
+N-gram Breakdown:
+  <s> <s> <s> dogs                         Probability: 9.0142458566e-06
+  <s> <s> dogs are                         Probability: 9.0142458566e-06
+  <s> dogs are animals                     Probability: 9.0142458566e-06
+  dogs are animals </s>                    Probability: 1.0000000000e+00
+
+================================================================================
+
+Sentence 3: a dog is an animal
+--------------------------------------------------------------------------------
+Sentence Log Probability: -48.2585769056
+Sentence Probability: 1.1004399422e-21
+
+N-gram Breakdown:
+  <s> <s> <s> a                            Probability: 1.6666666667e-01
+  <s> <s> a dog                            Probability: 9.0142458566e-06
+  <s> a dog is                             Probability: 9.0142458566e-06
+  a dog is an                              Probability: 9.0142458566e-06
+  dog is an animal                         Probability: 9.0142458566e-06
+  is an animal </s>                        Probability: 1.0000000000e+00
+
+================================================================================
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Total sentences: 3
+Total words: 14
+Average log probability per sentence: -28.5311988776
+Perplexity: 452.0661
