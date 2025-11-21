@@ -1,0 +1,87 @@
+Preprocessed Sentences:
+The cat sat on the mat. -> ['the', 'cat', 'sat', 'on', 'the', 'mat', 'PUNCT']
+Visit https://example.com for more info! -> ['visit', 'URL', 'for', 'more', 'info', 'PUNCT']
+There are 123 apples in the basket. -> ['there', 'are', 'NUMBER', 'apples', 'in', 'the', 'basket', 'PUNCT']
+Hello, world!!! -> ['hello', 'PUNCT', 'world', 'PUNCT', 'PUNCT', 'PUNCT']
+
+TF-IDF Scores:
+Sentence 1:
+  in: 0.0244
+  visit: 0.0141
+  world: 0.0099
+  NUMBER: 0.0077
+  apples: 0.0062
+  the: 0.0059
+  are: 0.0045
+  there: 0.0040
+  URL: 0.0036
+  mat: 0.0051
+  PUNCT: 0.0000
+  sat: 0.0043
+  hello: 0.0025
+  cat: 0.0037
+  basket: 0.0022
+  for: 0.0020
+  more: 0.0019
+  info: 0.0018
+  on: 0.0027
+Sentence 2:
+  in: 0.0254
+  visit: 0.0229
+  world: 0.0101
+  NUMBER: 0.0077
+  apples: 0.0063
+  the: 0.0030
+  are: 0.0046
+  there: 0.0040
+  URL: 0.0057
+  mat: 0.0032
+  PUNCT: 0.0000
+  sat: 0.0027
+  hello: 0.0025
+  cat: 0.0023
+  basket: 0.0022
+  for: 0.0032
+  more: 0.0031
+  info: 0.0029
+  on: 0.0017
+Sentence 3:
+  in: 0.0373
+  visit: 0.0138
+  world: 0.0098
+  NUMBER: 0.0120
+  apples: 0.0098
+  the: 0.0046
+  are: 0.0071
+  there: 0.0063
+  URL: 0.0035
+  mat: 0.0032
+  PUNCT: 0.0000
+  sat: 0.0027
+  hello: 0.0025
+  cat: 0.0023
+  basket: 0.0034
+  for: 0.0020
+  more: 0.0019
+  info: 0.0018
+  on: 0.0017
+Sentence 4:
+  in: 0.0254
+  visit: 0.0144
+  world: 0.0160
+  NUMBER: 0.0077
+  apples: 0.0063
+  the: 0.0030
+  are: 0.0046
+  there: 0.0040
+  URL: 0.0036
+  mat: 0.0032
+  PUNCT: 0.0000
+  sat: 0.0027
+  hello: 0.0040
+  cat: 0.0023
+  basket: 0.0022
+  for: 0.0020
+  more: 0.0019
+  info: 0.0018
+  on: 0.0017
