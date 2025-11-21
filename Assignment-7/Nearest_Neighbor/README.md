@@ -42,15 +42,9 @@ Each line contains:
 sentence_index<TAB>neighbor_index<TAB>similarity<TAB>sentence<TAB>|||<TAB>neighbor_sentence
 ```
 
-Example: 
-```
-
-
-1	48	0.6235	ఇక కోటాలో మెడికల్ , ఇంజినీరింగ్ కోచింగ్ సెంటర్లు చాలా ఉన్నాయి	|||	ఇక వంశీ కృష్ణ ఆకెళ్ళ దర్శకునిగా చాలా సేఫ్ వెళ్ళడానికి ప్రయత్నించాడు 
-```
 ---
 
-## 🧠 Methodology
+##  Methodology
 
 - Loads tokenized sentences from `.txt` files.
 - Loads sparse TF-IDF matrices from `.npz` files.
@@ -60,17 +54,17 @@ Example:
 
 ---
 
-## 📦 Output Format Example
+##  Output Format Example
 
 ```
-3	17	0.8421	This is a sample sentence.	|||	That was a sample sentence too.
+1	48	0.6235	ఇక కోటాలో మెడికల్ , ఇంజినీరింగ్ కోచింగ్ సెంటర్లు చాలా ఉన్నాయి	|||	ఇక వంశీ కృష్ణ ఆకెళ్ళ దర్శకునిగా చాలా సేఫ్ వెళ్ళడానికి ప్రయత్నించాడు 
 ```
 
 This means sentence 3’s nearest neighbor is sentence 17 with a cosine similarity of 0.8421.
 
 ---
 
-## 🛠 Requirements
+## Requirements
 
 - Python 3.x  
 - numpy  
@@ -85,7 +79,7 @@ pip install numpy scipy scikit-learn
 
 ---
 
-## 📌 Notes
+##  Notes
 
 - Input sentences must be **space-tokenized**.  
 - TF-IDF matrices must match the number of sentences in each file.  
@@ -93,8 +87,4 @@ pip install numpy scipy scikit-learn
 
 ---
 
-## 👩‍💻 Author
 
-Mahitha1229 — NLP Assignment  
-SVNIT Surat
-```
