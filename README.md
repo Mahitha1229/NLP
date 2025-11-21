@@ -122,3 +122,38 @@ This project performs the following tasks:
 
 6. **Output Saving**  
    Saves results to a tab-separated file for inspection or downstream analysis.
+
+---
+
+### **Assignment 7 :**
+
+This repository contains four modular scripts for analyzing sentence similarity and statistical relationships using TF-IDF, PMI, and cosine similarity. Each module is self-contained and designed for reproducible experiments on tokenized text datasets.
+
+**1. TF-IDF Vectorization**
+
+- Computes sparse TF-IDF matrices for train, val, and test sets.
+- Uses scikit-learn’s `TfidfVectorizer` with space-tokenized input.
+- Saves `.npz` matrices and vocabulary as `vocab.json`.
+
+---
+
+**2. PMI Scoring**
+
+- Computes Pointwise Mutual Information scores using unigram and bigram models.
+- Scores each sentence in val/test sets and writes PMI values to output files.
+
+---
+
+**3. Nearest Neighbor (within val/test)**
+
+- Finds the most similar sentence within the same set using cosine similarity.
+- Outputs nearest neighbor index, similarity score, and sentence pair.
+
+--- 
+
+**4. Bonus Question (val/test → train)** 
+- Finds the most similar training sentence for each val/test sentence.
+- Uses batching to handle large training sets efficiently.
+- Estimates operation count for dense dot products.
+
+---
