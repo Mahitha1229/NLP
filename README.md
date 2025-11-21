@@ -203,6 +203,44 @@ quadrigram_frequency_table.txt
 ```
 
 ---
+### **Assignment 6 :**
+
+# Quadgram Language Models: Katz Backoff and Kneser-Ney Smoothing
+
+## Overview
+This project focuses on implementing and evaluating two advanced smoothing techniques for quadgram (4-gram) language models:
+1. Katz Backoff model
+2. Kneser-Ney smoothing algorithm
+
+The models are then used to generate sentences with two different decoding strategies:
+- Greedy approach (Maximum Likelihood Estimation)
+- Beam search with beam size = 20
+
+## Tasks
+1. Implement the Katz Backoff model for the quadgram model.
+2. Implement the Kneser-Ney smoothing algorithm for the quadgram model.
+3. For each of the n-gram models, generate 100 sentences using:
+   a. Greedy Approach (MLE)
+   b. Beam Search with beam size = 20
+
+## Input
+- A text corpus file containing sentences.
+- Each sentence is tokenized and processed into quadgrams.
+
+## Output
+- 100 sentences generated using the Katz Backoff model:
+  - 100 with greedy approach
+  - 100 with beam search (beam size = 20)
+- 100 sentences generated using the Kneser-Ney model:
+  - 100 with greedy approach
+  - 100 with beam search (beam size = 20)
+
+## Notes
+- Greedy approach selects the most probable word at each step.
+- Beam search explores multiple candidate sequences and retains the top 20 at each step.
+- The generated sentences can be printed to console or stored in an output file for evaluation.
+
+---
 
 ### **Assignment 7 :**
 
@@ -236,7 +274,42 @@ This repository contains four modular scripts for analyzing sentence similarity 
 - Estimates operation count for dense dot products.
 
 ---
+### **Assignment 8:**
 
+# Text Preprocessing and TF-IDF Computation
+
+## Overview
+This project implements text preprocessing and TF-IDF (Term Frequency–Inverse Document Frequency) score computation for sentences. The preprocessing step standardizes input text by handling numbers, URLs, punctuation, and casing. The TF-IDF functions then compute term importance across a set of sentences using log-scaled scores.
+
+## Preprocessing Rules
+Each sentence is processed as follows:
+1. Tokenize into words.
+2. Convert all numbers into the special token `NUMBER`.
+3. Convert all URLs into the special token `URL`.
+4. Convert all punctuation symbols into the special token `PUNCT`.
+5. Lowercase the entire text.
+
+## Functions
+- `preprocess(sentence)`: Applies the preprocessing rules to a sentence and returns tokens.
+- `compute_tf_with_normalization(sentence, vocab, smoothing=False)`: Computes normalized term frequency using log scaling. Supports optional smoothing for unseen words.
+- `compute_idf(sentences, vocab, smoothing=False)`: Computes inverse document frequency using log scaling. Supports optional smoothing.
+- `compute_tf_idf_scores(sentences)`: Combines TF and IDF to compute TF-IDF scores for all terms in all sentences.
+- `main()`: Demonstrates preprocessing, TF, IDF, and TF-IDF computation on sample sentences and saves results to an output file.
+
+## Input
+- A list of sentences (can be replaced with any text corpus).
+
+## Output
+- Preprocessed sentences with tokens.
+- TF, IDF, and TF-IDF scores for each term.
+- Results printed to console and saved to `tfidf_output.txt`.
+
+## Notes
+- Log scaling is used for both TF and IDF.
+- Smoothing can be enabled to handle unseen words.
+- The code is modular and can be extended to larger corpora or integrated into NLP pipelines.
+
+---
 ### **Assignment 9:**
 
 **BPE & WordPiece Tokenization (From Scratch)**
@@ -260,4 +333,36 @@ This project implements **Byte Pair Encoding (BPE)** and **WordPiece** algorithm
 ```bash
 python code.py
 ```
+---
+
+### **Assignment 10:**
+# POS Tagging with HMM and Viterbi Decoding
+
+## Overview
+This project implements a Part-of-Speech (POS) tagger using a Hidden Markov Model (HMM) and the Viterbi decoding algorithm. The input dataset is `wsj_pos_tagged_en.txt`, which contains 3914 POS-tagged sentences from the Wall Street Journal corpus. Each word in a sentence is associated with a POS tag.
+
+## Tasks
+1. Split the dataset into K folds (K ≥ 3) for cross-validation.
+2. From the training data in each fold:
+   - Compute emission probabilities (word given tag).
+   - Compute transition probabilities (tag given previous tag).
+3. Implement the Viterbi algorithm to decode the most likely tag sequence for a given sentence.
+4. Evaluate the performance of the tagger across all folds using:
+   - Precision
+   - Recall
+   - F1-score
+
+## Input
+- `wsj_pos_tagged_en.txt`: 3914 sentences with words and their POS tags.
+
+## Output
+- Emission and transition probability tables derived from training data.
+- Predicted tag sequences for test sentences using Viterbi decoding.
+- Evaluation metrics (precision, recall, F1-score) averaged across all folds.
+
+## Notes
+- K-fold cross-validation ensures robust evaluation by training and testing on different subsets of the data.
+- Emission probabilities capture how likely a word is given a tag.
+- Transition probabilities capture how likely a tag follows another tag.
+- Viterbi decoding finds the most probable tag sequence efficiently using dynamic programming.
 
