@@ -125,6 +125,85 @@ This project performs the following tasks:
 
 ---
 
+## Assignment 5:
+
+This assignment builds and evaluates **n-gram language models** (unigram, bigram, trigram, quadrigram) using a tokenized Telugu corpus. It includes data splitting, model training, Good-Turing smoothing, sentence probability computation, and frequency analysis.
+
+---
+
+## Overview of Components
+
+**1. Data Splitting (`split_data.py`)**
+- Randomly shuffles the full corpus (`tokenized_telugu.txt`)
+- Creates:
+  - `train.txt` — remaining sentences
+  - `val.txt` — 1000 validation sentences
+  - `test.txt` — 1000 test sentences
+- Saves all splits to `data_splits/`
+
+---
+
+**2. N-Gram Model Training and Evaluation (`ngram_model.py`)**
+- Trains 4 models: unigram, bigram, trigram, quadrigram
+- Applies **Good-Turing smoothing**:
+  - Total probability mass for unseen n-grams: `N₁ / N`
+  - Individual unseen n-gram probability:
+    - For n ≥ 2: `P_unseen = (N₁ / N) / (Vⁿ - N)`
+    - For unigram: `P_unseen = (N₁ / N) / (V - U)`
+- Computes:
+  - Sentence log probabilities
+  - Sentence probabilities
+  - Perplexity on validation and test sets
+- Saves results to `ngram_results/`
+
+---
+
+**3. Frequency Table Generation (`good_turing_tables.py`)**
+- Loads n-gram count files (`*_model.txt`)
+- Computes:
+  - `Nc`: number of n-grams with count `c`
+  - `C*`: adjusted count using Good-Turing formula
+  - `Nc / N`: probability mass for count `c`
+- Saves top 100 frequency rows to `*_frequency_table.txt`
+
+---
+
+**4. Evaluation Summary**
+- Sentence-level breakdowns include:
+  - N-gram probabilities
+  - Log probability
+  - Perplexity
+- `summary_comparison.txt` compares perplexity across all models
+
+---
+
+## Output Files
+
+```
+data_splits/
+├── train.txt
+├── val.txt
+└── test.txt
+
+ngram_results/
+├── unigram_validation_results.txt
+├── unigram_test_results.txt
+├── bigram_validation_results.txt
+├── bigram_test_results.txt
+├── trigram_validation_results.txt
+├── trigram_test_results.txt
+├── quadrigram_validation_results.txt
+├── quadrigram_test_results.txt
+└── summary_comparison.txt
+
+unigram_frequency_table.txt
+bigram_frequency_table.txt
+trigram_frequency_table.txt
+quadrigram_frequency_table.txt
+```
+
+---
+
 ### **Assignment 7 :**
 
 This repository contains four modular scripts for analyzing sentence similarity and statistical relationships using TF-IDF, PMI, and cosine similarity. Each module is self-contained and designed for reproducible experiments on tokenized text datasets.
@@ -180,3 +259,5 @@ This project implements **Byte Pair Encoding (BPE)** and **WordPiece** algorithm
 ## Run
 ```bash
 python code.py
+```
+
